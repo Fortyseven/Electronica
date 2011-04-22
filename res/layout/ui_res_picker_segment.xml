@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical"
+	android:layout_width="fill_parent" 
+	android:layout_height="fill_parent">
+	<TextView 
+		android:id="@+id/segment0"
+		android:layout_width="fill_parent" android:layout_height="wrap_content"
+		android:gravity="center"
+		/>
+	<TextView 
+		android:id="@+id/segment1" 
+		android:layout_width="fill_parent" android:layout_height="wrap_content"
+		android:gravity="center"
+		/>
+	<TextView 
+		android:id="@+id/segment2"
+		android:layout_width="fill_parent" android:layout_height="wrap_content"
+		android:gravity="center"		
+		/>
+	<TextView 
+		android:id="@+id/segment3"
+		android:layout_width="fill_parent" android:layout_height="wrap_content"
+		android:gravity="center"
+		/>
+	<TextView 
+		android:id="@+id/segment4"
+		android:layout_width="fill_parent" android:layout_height="wrap_content"
+		android:gravity="center"
+		/>
+	<TextView 
+		android:id="@+id/segment5"
+		android:layout_width="fill_parent" android:layout_height="wrap_content"
+		android:gravity="center"
+		/>
+	<TextView 
+		android:id="@+id/segment6"
+		android:layout_width="fill_parent" android:layout_height="wrap_content"
+		android:gravity="center"
+		/>
+	<TextView 
+		android:id="@+id/segment7"
+		android:layout_width="fill_parent" android:layout_height="wrap_content"
+		android:gravity="center"
+		/>
+	<TextView 
+		android:id="@+id/segment8"
+		android:layout_width="fill_parent" android:layout_height="wrap_content"
+		android:gravity="center"
+		/>
+	<TextView 
+		android:id="@+id/segment9"
+		android:layout_width="fill_parent" android:layout_height="wrap_content"
+		android:gravity="center"
+		/>
+	<TextView 
+		android:id="@+id/segment10"
+		android:layout_width="fill_parent" android:layout_height="wrap_content"
+		android:gravity="center"
+		/>
+	<TextView 
+		android:id="@+id/segment11"
+		android:layout_width="fill_parent" android:layout_height="wrap_content"
+		android:gravity="center"
+		/>
+</LinearLayout>

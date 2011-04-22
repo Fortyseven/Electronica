@@ -1,0 +1,137 @@
+body {
+	background:		white;
+	color:			black;
+	font-size:		10pt;
+	font-family:		serif;
+	margin:			0px;
+	padding:		0px;
+}
+
+h1 {
+	color: 			#555;
+	font-family:		sans-serif;
+	text-shadow: 		0px 0px 8px white;
+	background: 		-webkit-gradient(
+		    			linear,
+		    			left bottom,
+		    			left top,
+		    			color-stop(0.00, #777),
+		    			color-stop(0.24, #aaa),
+		    			color-stop(0.70, #eee),
+		    			color-stop(1.0, #ccc)
+	                             );    	
+    	border: 		2px solid #555;
+	padding: 		0.2em;
+	text-align: 		center;
+    	border-radius: 		15px;
+    	-webkit-border-radius:	15px;
+}
+
+h2,h3 {
+	margin:		none;
+	font-style:	italic;
+	font-size:	1.5em;
+	font-family: 	sans-serif;
+	color:		#008;
+	background:	#ddd;
+	width:		75%;
+}
+
+h3 {
+	font-size:	1.1em;
+	background:	none;
+	color:		black;
+}
+
+img {
+	margin:	1em;
+}
+
+
+/* ============================================*/
+table {
+	width:		100%;
+	background:	black;
+}
+
+.oddrow {
+	background: 		#eee;
+
+}
+.evenrow {
+	background:		#ddd;
+}
+
+td, th {
+	padding:	1px;
+	margin:		1px;
+	font-size: 	12px;
+	color: 		black;
+}
+
+th {
+	color:		white;
+	font-family:	sans-serif;
+	background: 	#666;
+	font-style: 	italic;
+	border-top:	1px solid black;
+}
+
+table caption {
+	font-family:	sans-serif;
+	font-weight:	bolder;
+	background: 	#aaa;
+	border:		2px solid black;
+	border-bottom:	none;
+}
+
+.clear {clear:both;}
+/* ============================================*/
+#Contents {
+	margin: 0px;
+	padding: 0px;
+}
+
+#Contents {
+	list-style: 	none;
+}
+#Contents li {
+	background: 	-webkit-gradient( linear, left bottom, left top, color-stop(0.00, #ccc), color-stop(0.50, #fff), color-stop(1.00, #eee) );
+	border: 	3px outset #ddd;
+	font-family:	sans-serif;
+	float:		left;
+	line-height: 	2em;
+	height:		2.2em;	
+	text-align: 	center;
+	font-size:		1.0em;
+}
+#Contents a {
+	color:			black;
+	font-weight: 		bold;
+	text-decoration: 	none;
+	padding: 		2px;
+	padding-right:		4px;
+	text-shadow:		0px 2px 0px #fff;
+}
+
+
+#citation {
+	text-align:	right;
+	font-style:	italic;
+	font-weight:	bold;
+	font-size:	small;
+	padding:	1em;
+}
+#citation:before {
+	content: "[via "
+}
+#citation:after {
+	content: "]"
+}
+
+.center {
+	margin: 0;
+	text-align: center;
+}
+
+.nomargin {margin-left:0; margin-right:0;}

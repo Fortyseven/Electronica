@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest 
+	xmlns:android="http://schemas.android.com/apk/res/android" 
+	package="com.hacsoft.electronica" 
+	android:versionName="19" 
+	android:versionCode="19"
+	android:installLocation="preferExternal">
+	<uses-permission android:name="android.permission.INTERNET"/>
+	<application android:icon="@drawable/icon" android:label="@string/app_name">
+	
+		<activity android:label="@string/app_name" android:name=".Main">
+			<intent-filter>
+				<action android:name="android.intent.action.SEARCH"/>
+				<meta-data android:name="android.app.searchable" android:resource="@xml/searchable"></meta-data>		
+			</intent-filter>
+
+			<intent-filter>
+				<action android:name="android.intent.action.MAIN" />
+				<category android:name="android.intent.category.LAUNCHER" />
+			</intent-filter>					
+		</activity>
+		<activity android:name="About"></activity>
+		<activity android:name="WhatsNew"
+			android:theme="@android:style/Theme.Dialog"></activity>
+		<activity android:name="Tools"></activity>
+		<activity android:name="Formulas"></activity>
+		<activity android:name="Charts"></activity>
+		<activity android:name="ChartsComponents"></activity>
+		<activity android:name="ChartsCables"></activity>
+		<activity android:name="ChartsCircuits"></activity>
+		<activity android:name="ChartsComputers"></activity>
+		<activity android:name="ChartsOther"></activity>
+		
+		<activity android:name="ChartsAudio"></activity>
+		<activity android:name="ChartsVideo"></activity>
+		<activity android:name="ChartsVideoGames"></activity>
+		
+		<activity android:name="ChartsASCII"></activity>
+		
+		<activity android:name="ChartView" android:theme="@android:style/Theme.NoTitleBar.Fullscreen"></activity>
+		<activity android:name="ChartWebView" ></activity>
+		<activity android:name="Formulas_LEDResistance"></activity>
+		<activity android:name="Formulas_OhmsLaw"></activity>
+		<activity android:name="Formulas_SeriesParallelResistance"></activity>
+		<activity android:name="ToolResistorColorCodes2"></activity>
+		<activity android:name="ToolCapCalc"></activity>		
+	</application>
+	<uses-sdk android:minSdkVersion="3" />
+</manifest>

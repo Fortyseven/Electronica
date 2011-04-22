@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<style name="FormulaTitle">
+		<item name="android:textAppearance">?android:attr/textAppearanceLargeInverse</item>
+		<item name="android:background">@drawable/grad_title</item>		
+	</style>
+
+	<style name="SP_ResRows">
+		<item name="android:textSize">24sp</item>
+		<item name="android:textColor">#ffffff</item>	
+	</style>
+</resources>

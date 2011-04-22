@@ -1,0 +1,75 @@
+<!doctype html>
+<html>
+<head>
+	<title>Electronica - Portable Digital Media Interface (PDMI)</title>
+	<link href="../css/theme.css" rel="stylesheet"/>
+	<script src="../js/jquery.js" type="text/javascript"></script>
+	<script src="../js/utils.js" type="text/javascript"></script>
+	<style>
+		table {
+			background: black;
+		}
+	</style>
+</head>
+<body id="top">
+	<h1>Portable Digital Media Interface (PDMI)</h1>
+	<ul id="Contents">
+		<li><a href="#supports">Supports</a></li>
+		<li><a href="#pinout">Pinout</a></li>
+		<li><a href="http://en.m.wikipedia.org/wiki/PDMI">Wikipedia</a></li>
+	</ul>
+	<div class="clear"></div>
+	
+	<img src="../images/pdmi_logo.png" align="right">
+	
+	<h2><a name="supports">Supports</a></h2>
+	<ul>
+		<li>2-lane DisplayPort v1.1a with AUX Channel and Hot Plug Detect</li>
+		<li>USB 3.0, USB 2.0 and USB On-The-Go</li>
+		<li>Analog stereo line-out for legacy devices</li>
+		<li>Power line from both host and portable device</li>
+	</ul>
+			
+	<h2><a name="pinout">Pinout</a></h2>
+	<table> 
+	<thead>
+	      <th>Pin No.</th> 
+	      <th>Pin Name</th> 
+	      <th>Interface Grouping</th> 
+	      <th>Pin Description</th> 
+	</thead> 
+	<tr> 
+	      <td>1</td><td>USB 5V</td><td rowspan="5">USB 2.0 Interface</td><td>USB Power (VBUS)</td></tr> 
+	      <tr><td>2</td><td>USB DGND</td><td>USB Ground</td></tr> 
+	      <tr><td>3</td><td>USB D+</td><td>Data +</td></tr> 
+	      <tr><td>4</td><td>USB OTG</td><td>On&#x2010;The&#x2010;Go (allows device&#x2010;to&#x2010;device data transfer)</td></tr> 
+	      <tr><td>5</td><td>USB D&#x2010;</td><td>Data &#x2010;</td></tr> 
+	      <tr><td>6</td><td>HC 5V</td><td rowspan="2">High Current Power (Output on Host)</td><td>High current 5V supply (1.8A, or 3.6A if combined with pin 15)</td></tr> 
+	      <tr><td>7</td><td>DGND / HC GND</td><td>High current Ground</td></tr> 
+	      <tr><td>8</td><td>AUDIO RIGHT OUT</td><td rowspan="3">Analog Audio (Input on Host)</td><td>Right analog audio output (line level)</td></tr> 
+	      <tr><td>9</td><td>AUDIO LEFT OUT</td><td>Left analog audio output (line level)</td></tr> 
+	      <tr><td>10</td><td>AUDIO OUT GND</td><td>Audio output ground</td></tr> 
+	      <tr><td>11</td><td>CEC</td><td>CEC</td><td>Consumer Electronic Control, for HDMI interface applications</td></tr> 
+	      <tr><td>12</td><td>SSR&#x2010;</td><td rowspan="3">USB 3.0 Data Device Receive</td><td>USB 3.0 SSRX&#x2010; signal</td></tr> 
+	      <tr><td>13</td><td>GND</td><td>Signal Ground</td></tr> 
+	      <tr><td>14</td><td>SSR+</td><td>USB 3.0 SSRX+ signal</td></tr> 
+	      <tr><td>15</td><td>HC 5V</td><td rowspan="2">High Current Power ( Output from Host)</td><td>High current 5V supply (1.8A, or 3.6A if combined with pin 6)</td></tr> 
+	      <tr><td>16</td><td>HC GND</td><td>High current Ground</td></tr> 
+	      <tr><td>17</td><td>SST&#x2010;</td><td rowspan="3">USB 3.0 Data Device Transmit</td><td>USB 3.0 SSTX&#x2010; signal</td></tr> 
+	      <tr><td>18</td><td>GND</td><td>Signal Ground</td></tr> 
+	      <tr><td>19</td><td>SST+</td><td>USB 3.0 SSTX+ signal</td></tr> 
+	      <tr><td>20</td><td>HPD</td><td rowspan="11">DisplayPort v1.1a Interface, 2 Lane (Host is Sink, Device is Source)</td><td>Hot Plug Detect (includes interrupt function from host)</td></tr> 
+	      <tr><td>21</td><td>DAUX+</td><td>AUX Channel +</td></tr> 
+	      <tr><td>22</td><td>DAUX&#x2010;</td><td>AUX Channel +</td></tr> 
+	      <tr><td>23</td><td>AP</td><td>3.3V DP Power (Power from portable device)</td></tr> 
+	      <tr><td>24</td><td>D1&#x2010;</td><td>Main Link Lane 1 (&#x2010;)</td></tr> 
+	      <tr><td>25</td><td>GND</td><td>Signal Ground</td></tr> 
+	      <tr><td>26</td><td>D1+</td><td>Main Link Lane 1 (+)</td></tr> 
+	      <tr><td>27</td><td>GND</td><td>Signal Ground</td></tr> 
+	      <tr><td>28</td><td>D0&#x2010;</td><td>Main Link Lane 0 (&#x2010;)</td></tr> 
+	      <tr><td>29</td><td>GND</td><td>Signal Ground</td></tr> 
+	      <tr><td>30</td><td>D0+</td><td>Main Link Lane 0 (+)</td></tr> 
+      </table>
+      <div id="citation"><a href="http://en.m.wikipedia.org/wiki/PDMI">Wikipedia</a></div> 
+</body>
+</html>

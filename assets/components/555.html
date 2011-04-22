@@ -1,0 +1,46 @@
+<!doctype html>
+<html>
+<head>
+	<title>Electronica - 555 Precision Timer</title>
+	<link href="../css/theme.css" rel="stylesheet"/>
+	<script src="../js/jquery.js" type="text/javascript"></script>
+	<script src="../js/utils.js" type="text/javascript"></script>
+</head>
+<body id="top">
+	<h1>555 Precision Timer</h1>
+	<ul id="Contents">
+		<li><a href="#pins">Pins</a></li>
+		<li><a href="#functional">Functional Diagram</a></li>
+		<li><a href="#astable">Astable</a></li>
+		<li><a href="#monostable">Monostable</a></li>
+		<li><a href="http://en.m.wikipedia.org/wiki/555_timer_IC">Wikipedia</a></li>
+	</ul>
+	<div class="clear"></div>
+	
+	<h2>Pins</h2>
+	<img class="nomargin" src="../images/555-pins.png">
+
+	<h2><a id="functional">Functional Diagram</a></h2>
+
+	<img class="nomargin" src="../images/555-functional.png">
+
+	<h2><a id="astable">Astable Operation</a></h2>
+	<img src="../images/555-astable.png">
+	<h3>T = 0.7 × (<span style="color:blue">R1</span> + 2<span style="color:blue">R2</span>) × <span style="color:blue">C1</span></h3> 
+	<h3>Mark (time on) = 0.7 x (<span style="color:blue">R1</span> + <span style="color:blue">R2</span>) x <span style="color:blue">C1</span></h3>
+	<h3>Space (time off) = 0.7 x <span style="color:blue">R1</span> x <span style="color:blue">C1</span></h3>
+	
+	<div><b>T</b> = time in seconds</div>
+	<div><b>R1,R2</b> = resistance in ohms</div>
+	<div><b>C1</b> = capacitance in farads</div>
+	
+	<h2><a id="monostable">Monostable Operation</a></h2>
+	<img class="nomargin" src="../images/555-monostable.png">
+	<h3>T = 1.1 × <span style="color:blue">R1</span> × <span style="color:blue">C1</span></h3>
+	<div><b style="color:blue">T</b> = time period in seconds</div> 
+	<div><b style="color:blue">R1</b> = resistance in ohms</div>
+	<div><b style="color:blue">C1</b> = capacitance in farads</div>
+	
+	<div id="citation"><a href="http://en.m.wikipedia.org/wiki/555_timer_IC">Wikipedia</a>, <a href="https://docs.google.com/viewer?url=http://www.sparkfun.com/datasheets/Components/General/ne555.pdf">TI Datasheet</a>, <a href="http://www.kpsec.freeuk.com/555timer.htm">Electronics Club</a></div> 
+</body>
+</html>

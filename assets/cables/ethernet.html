@@ -1,0 +1,137 @@
+<!doctype html>
+<html>
+<head>
+	<title>Ethernet (RJ-45)</title>
+	<link href="../css/theme.css" rel="stylesheet"/>
+	<script src="../js/jquery.js" type="text/javascript"></script>
+	<script src="../js/utils.js" type="text/javascript"></script>
+        <style>
+                .wire        { width: 20% }
+                .wire.green  { background: #0F0   }
+                .wire.blue   { background: #00F   }
+                .wire.orange { background: orange }
+                .wire.brown  { background: #942   }
+
+                .wire.greenwhite { background: -webkit-gradient(linear, right bottom, left top,
+                                                color-stop(1.00, #FFF),color-stop(0.90, #FFF),color-stop(0.75, #0F0),color-stop(0.60, #FFF),color-stop(0.50, #FFF),
+                                                color-stop(0.40, #FFF),color-stop(0.25, #0F0),color-stop(0.10, #FFF),color-stop(0.00, #FFF))
+                }
+                .wire.bluewhite { background: -webkit-gradient(linear, right bottom, left top,
+                                                color-stop(1.00, #FFF),color-stop(0.90, #FFF),color-stop(0.75, #00F),color-stop(0.60, #FFF),color-stop(0.50, #FFF),
+                                                color-stop(0.40, #FFF),color-stop(0.25, #00F),color-stop(0.10, #FFF),color-stop(0.00, #FFF))
+                }
+                .wire.orangewhite { background: -webkit-gradient(linear, right bottom, left top,
+                                                color-stop(1.00, #FFF),color-stop(0.90, #FFF),color-stop(0.75, orange),color-stop(0.60, #FFF),color-stop(0.50, #FFF),
+                                                color-stop(0.40, #FFF),color-stop(0.25, orange),color-stop(0.10, #FFF),color-stop(0.00, #FFF))
+                }
+                .wire.brownwhite { background: -webkit-gradient(linear, right bottom, left top,
+                                                color-stop(1.00, #FFF),color-stop(0.90, #FFF),color-stop(0.75, #942),color-stop(0.60, #FFF),color-stop(0.50, #FFF),
+                                                color-stop(0.40, #FFF),color-stop(0.25, #942),color-stop(0.10, #FFF),color-stop(0.00, #FFF))
+                }
+        </style>
+</head>
+<body>
+	<h1>Ethernet (RJ-45)</h1>
+		<ul id="Contents">
+			<li><a href="#pins">Pins</a></li>
+			<li><a href="#t568a">T568a</a></li>
+                        <li><a href="#t568b">T568b</a></li>
+                        <li><a href="#t568bx">T568b Crossover</a></li>
+			<li><a href="http://en.wikipedia.org/wiki/Ethernet_over_twisted_pair">Wikipedia</a></li>
+		</ul>
+
+	<div class="clear"></div>
+	<h2><a name="basics">Pins</a></h2>
+	<ul>
+		<img src="../images/rj45.png">
+	</ul>
+
+        <h2><a name="t568a">T568A</h2>
+        <table>
+                <thead>
+                <tr>
+                        <th>Pin</th>
+                        <th>Color</th>
+                        <th></th>
+                        <th>10/100</th>
+                        <th>1000Base-T</th>
+                </tr>
+                </thead>
+                <tbody>
+                        <tr><td>1</td><td>WHI/GRN</td><td class="wire greenwhite"></td><td>Trans +</td><td>BI_DA +</td></tr>
+                        <tr><td>2</td><td>GRN</td><td class="wire green"></td><td>Trans -</td><td>BI_DA -</td></tr>
+                        <tr><td>3</td><td>WHI/ORN</td><td class="wire orangewhite"></td><td>Recv +</td><td>BI_DB +</td></tr>
+                        <tr><td>4</td><td>BLU</td><td class="wire blue"></td><td>--</td><td>BI_DC +</td></tr>
+                        <tr><td>5</td><td>WHI/BLU</td><td class="wire bluewhite"></td><td>--</td><td>BI_DC -</td></tr>
+                        <tr><td>6</td><td>ORN</td><td class="wire orange"></td><td>Recv -</td><td>BI_DB -</td></tr>
+                        <tr><td>7</td><td>WHI/BRN</td><td class="wire brownwhite"></td><td>--</td><td>BI_DD +</td></tr>
+                        <tr><td>8</td><td>BRN</td><td class="wire brown"></td><td>--</td><td>BI_DD -</td></tr>
+                </tbody>
+        </table>
+
+        <h2><a name="t568b">T568B</a></h2>
+        <table>
+                <thead>
+                <tr>
+                        <th>Pin</th>
+                        <th>Color</th>
+                        <th></th>
+                        <th>10/100</th>
+                        <th>1000Base-T</th>
+                </tr>
+                </thead>
+                <tbody>
+                        <tr><td>1</td><td>WHI/ORN</td><td class="wire orangewhite"></td><td>Trans +</td><td>BI_DA +</td></tr>
+                        <tr><td>2</td><td>ORN</td><td class="wire orange"></td><td>Trans -</td><td>BI_DA -</td></tr>
+                        <tr><td>3</td><td>WHI/GRN</td><td class="wire greenwhite"></td><td>Recv +</td><td>BI_DB +</td></tr>
+                        <tr><td>4</td><td>BLU</td><td class="wire blue"></td><td>--</td><td>BI_DC +</td></tr>
+                        <tr><td>5</td><td>WHI/BLU</td><td class="wire bluewhite"></td><td>--</td><td>BI_DC -</td></tr>
+                        <tr><td>6</td><td>GRN</td><td class="wire green"></td><td>Recv -</td><td>BI_DB -</td></tr>
+                        <tr><td>7</td><td>WHI/BRN</td><td class="wire brownwhite"></td><td>--</td><td>BI_DD +</td></tr>
+                        <tr><td>8</td><td>BRN</td><td class="wire brown"></td><td>--</td><td>BI_DD -</td></tr>
+                </tbody>
+        </table>
+
+        <h2><a name="t568bx">T568A/T568B Crossover</h2>
+        <table>
+                <thead>
+                <tr>
+                        <th></th>
+                        <th>Color</th>
+                        <th></th>
+                        <th></th>
+                        <th>Color</th>
+                        <th></th>
+                </tr>
+                </thead>
+                <tbody>
+                        <tr><td>1</td><td>WHI/ORN</td><td class="wire orangewhite"></td>
+                                <td>1</td><td>WHI/GRN</td><td class="wire greenwhite"></td></tr>
+
+                        <tr><td>2</td><td>ORN</td><td class="wire orange"></td>
+                                <td>2</td><td>GRN</td><td class="wire green"></td></tr>
+
+                        <tr><td>3</td><td>WHI/GRN</td><td class="wire greenwhite"></td>
+                                <td>3</td><td>WHI/ORN</td><td class="wire orangewhite"></td></tr>
+
+                        <tr><td>4</td><td>BLU</td><td class="wire blue"></td>
+                                <td>4</td><td>WHI/BRN</td><td class="wire brownwhite"></td></tr>
+
+                        <tr><td>5</td><td>WHI/BLU</td><td class="wire bluewhite"></td>
+                                <td>5</td><td>BRN</td><td class="wire brown"></td></tr>
+
+                        <tr><td>6</td><td>GRN</td><td class="wire green"></td>
+                                <td>6</td><td>ORN</td><td class="wire orange"></td></tr>
+
+                        <tr><td>7</td><td>WHI/BRB</td><td class="wire brownwhite"></td>
+                                <td>7</td><td>BLU</td><td class="wire blue"></td></tr>
+
+                        <tr><td>8</td><td>BRN</td><td class="wire brown"></td>
+                                <td>8</td><td>WHI/BLU</td><td class="wire bluewhite"></td></tr>
+                </tbody>
+        </table>
+
+
+	<div id="citation"><a href="http://en.wikipedia.org/wiki/Ethernet_over_twisted_pair">Wikipedia</a>, <a href="http://www.ertyu.org/steven_nikkel/ethernetcables.html">Steven Nikkel</a></div>
+</body>
+</html>
