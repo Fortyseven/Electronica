@@ -1,0 +1,71 @@
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:id="@+id/res_display"
+	android:orientation="horizontal">
+	<TextView
+		android:layout_width="fill_parent" android:layout_height="fill_parent"
+		android:background="@drawable/grad_res_wire"
+		android:layout_weight="14" />
+	<TextView
+		android:layout_width="fill_parent" android:layout_height="fill_parent"
+		android:background="@drawable/grad_res_bg"
+		android:layout_weight="14" />
+	<TextView
+		android:layout_width="fill_parent" android:layout_height="fill_parent"
+		android:background="@drawable/grad_res_stripe"
+		android:layout_weight="15"
+		android:id="@+id/res_stripe1" />
+	<TextView
+		android:layout_width="fill_parent" android:layout_height="fill_parent"
+		android:background="@drawable/grad_res_bg"
+		android:layout_weight="14" />
+	<TextView
+		android:layout_width="fill_parent" android:layout_height="fill_parent"
+		android:background="@drawable/grad_res_stripe"
+		android:id="@+id/res_stripe2"
+		android:layout_weight="15" />
+	<TextView
+		android:layout_width="fill_parent" android:layout_height="fill_parent"
+		android:background="@drawable/grad_res_bg"
+		android:layout_weight="14" />
+	<TextView
+		android:layout_width="fill_parent" android:layout_height="fill_parent"
+		android:background="@drawable/grad_res_stripe"
+		android:id="@+id/res_stripe3"
+		android:layout_weight="15" />
+	<TextView
+		android:layout_width="fill_parent" android:layout_height="fill_parent"
+		android:background="@drawable/grad_res_bg"
+		android:layout_weight="14" />
+	<TextView
+		android:layout_width="fill_parent" android:layout_height="fill_parent"
+		android:background="@drawable/grad_res_stripe"
+		android:id="@+id/res_stripe4"
+		android:layout_weight="15" />
+	<TextView
+		android:layout_width="fill_parent" android:layout_height="fill_parent"
+		android:background="@drawable/grad_res_bg"
+		android:layout_weight="14" />
+	<TextView
+		android:layout_width="fill_parent" android:layout_height="fill_parent"
+		android:background="@drawable/grad_res_stripe"
+		android:id="@+id/res_stripe5"
+		android:layout_weight="15" />
+	<TextView
+		android:layout_width="fill_parent" android:layout_height="fill_parent"
+		android:background="@drawable/grad_res_bg"
+		android:layout_weight="14" />
+	<TextView
+		android:layout_width="fill_parent" android:layout_height="fill_parent"
+		android:background="@drawable/grad_res_stripe"
+		android:id="@+id/res_stripe6"
+		android:layout_weight="15" />
+	<TextView
+		android:layout_width="fill_parent" android:layout_height="fill_parent"
+		android:background="@drawable/grad_res_bg"
+		android:layout_weight="14" />
+	<TextView
+		android:layout_width="fill_parent" android:layout_height="fill_parent"
+		android:background="@drawable/grad_res_wire"
+		android:layout_weight="14" />
+</LinearLayout>

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical"
+	android:layout_width="fill_parent"
+	android:layout_height="wrap_content">
+	<TextView
+		android:id="@+id/aboutlayout"
+		style="@style/FormulaTitle"
+		android:text="@string/toolcapcalc"
+		android:gravity="center"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"		
+		></TextView>
+	<LinearLayout
+		android:background="@drawable/grad_operand"
+		android:orientation="horizontal"
+		android:layout_gravity="center"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content">
+		<com.hacsoft.android.ANumberPicker
+			android:id="@+id/capvalue1"
+			android:layout_weight="3"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content" />
+		<com.hacsoft.android.ANumberPicker
+			android:id="@+id/capvalue2"
+			android:layout_weight="3"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content" />
+		<com.hacsoft.android.ANumberPicker
+			android:id="@+id/capvalue3"
+			android:layout_weight="3"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content" />
+	</LinearLayout>
+	<LinearLayout
+		android:background="@drawable/grad_result"
+		android:orientation="horizontal"
+		android:layout_gravity="center"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content">
+		<EditText
+			android:id="@+id/result"
+			android:editable="false"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content">
+		</EditText>
+	</LinearLayout>
+	<ImageView
+		android:src="@drawable/tool_capcalc_hint"
+			android:layout_gravity="top"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"		
+	></ImageView>
+</LinearLayout>

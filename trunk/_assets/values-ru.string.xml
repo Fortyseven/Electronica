@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="app_name">электроника</string>
+	<string name="version">1.4</string>
+
+	<string name="about_message">\"If you think that by threatening me you can get me to do what you want...well, that’s where you’re right. But -- and I am only saying that because I care -- there\'s a lot of decaffeinated brands on the market that are just as tasty as the real thing.\" – Chris Knight</string>
+	<string name="about_whatsnewtext">What\'s New?</string>
+	<string name="about_whatsnew">
+		<li>New cable: USB</li>\n
+		<li>More to come!</li>\n
+	</string>
+
+
+	<string name="error">ОШИБКА: %1$s</string>
+
+	<string name="main">Главное меню</string>
+	<string name="tools">инструментарий</string>
+	<string name="formulas">калькулятор</string>
+	<string name="charts">Графики и таблицы</string>
+	<string name="about">О программе</string>
+
+	<string name="charts_chips">Микросхемы</string>
+	<string name="charts_cables">Кабели</string>
+		
+	<string name="formulas_ledresistance">Светодиод сопротивления</string>
+	<string name="formulas_ledresistance_vs">Supply Voltage</string>
+	<string name="formulas_ledresistance_vf">LED Forward Voltage</string>
+	<string name="formulas_ledresistance_if">LED Forward Current (mA)</string>
+
+	<string name="toolresistorcolorcodes">Resistor Color Codes</string>
+	<string name="ohm">&#8486;</string>
+	
+	<string name="ohms_title">Закон Ома</string>
+
+	<string name="led_title">Светодиод сопротивления</string>
+
+	<string name="sp_title">Series/Parallel Resistors</string>
+	<string name="sp_series">Series</string>
+	<string name="sp_parallel">Parallel</string>
+	<string name="sp_removed">Removed: %1$f</string>
+	<string name="sp_err_invalidinput">Сопротивление значение должно быть положительным и больше нуля.</string>
+	
+</resources>

@@ -1,0 +1,178 @@
+<!doctype html>
+<html>
+<head>
+	<title>Electronica - Apple 30-pin Dock Connector</title>
+	<link href="../css/theme.css" rel="stylesheet"/>
+	<script src="../js/jquery.js" type="text/javascript"></script>
+	<script src="../js/utils.js" type="text/javascript"></script>
+</head>
+<body id="top">
+	<h1>Apple 30-pin Dock Connector</h1>
+		<ul id="Contents">
+			<li><a href="#pinout">Pinout</a></li>
+			<li><a href="http://en.m.wikipedia.org/wiki/Dock_Connector#Apple_30_pin_dock_connector">Wikipedia</a></li>
+		</ul>
+	<div class="clear"></div>	
+	<img src="../images/apple30pin.png" align="center">
+	<div class="clear"></div>			
+	<h2><a name="pinout">Pinout</a></h2>
+
+<table> 
+        <thead>
+            <th>Pin</td> 
+            <th>Signal</td> 
+            <th>Description</td> 
+        </thead> 
+        <tr> 
+            <td>1</td> 
+            <td>GND</td> 
+            <td>Ground (-), internally connected with Pin 2 on iPod motherboard</td> 
+        </tr> 
+        <tr> 
+            <td>2</td> 
+            <td>GND</td> 
+            <td>Audio &amp; Video ground (-), internally connected with Pin 1 on iPod motherboard</td> 
+        </tr> 
+        <tr> 
+            <td>3</td> 
+            <td>Right</td> 
+            <td>Line Out - R (+) (Audio output, right channel)</td> 
+        </tr> 
+        <tr> 
+            <td>4</td> 
+            <td>Left</td> 
+            <td>Line Out - L(+) (Audio output, left channel)</td> 
+        </tr> 
+        <tr> 
+            <td>5</td> 
+            <td>Right In</td> 
+            <td>Line In - R (+)</td> 
+        </tr> 
+        <tr> 
+            <td>6</td> 
+            <td>Left In</td> 
+            <td>Line In - L (+)</td> 
+        </tr> 
+        <tr> 
+            <td>8</td> 
+            <td>Video Out</td> 
+            <td>Composite video output (only when slideshow active on iPod Photo)</td> 
+        </tr> 
+        <tr> 
+            <td>9</td> 
+            <td>S-Video Chrominance output</td> 
+            <td>for iPod Color, Photo only</td> 
+        </tr> 
+        <tr> 
+            <td>10</td> 
+            <td>S-Video Luminance output</td> 
+            <td>for iPod Color, Photo only</td> 
+        </tr> 
+        <tr> 
+            <td>11</td> 
+            <td>GND</td> 
+            <td>If connected to GND the iPhone sends audio signals through pin 3-4, otherwise it uses onboard speaker.</td> 
+        </tr> 
+        <tr> 
+            <td>12</td> 
+            <td>Tx</td> 
+            <td>ipod sending line, Serial TxD</td> 
+        </tr> 
+        <tr> 
+            <td>13</td> 
+            <td>Rx</td> 
+            <td> 
+            <p>ipod receiving line, Serial RxD</p> 
+            </td> 
+        </tr> 
+        <tr> 
+            <td>14</td> 
+            <td>RSVD</td> 
+            <td>Reserved</td> 
+        </tr> 
+        <tr> 
+            <td>15</td> 
+            <td>GND</td> 
+            <td>Ground (-), internally connected with pin 16 on iPod motherboard</td> 
+        </tr> 
+        <tr> 
+            <td>16</td> 
+            <td>GND</td> 
+            <td>USB GND (-), internally connected with pin 15 on iPod motherboard</td> 
+        </tr> 
+        <tr> 
+            <td>17</td> 
+            <td>RSVD</td> 
+            <td>Reserved</td> 
+        </tr> 
+        <tr> 
+            <td>18</td> 
+            <td>3.3V</td> 
+            <td>3.3V Power (+) <br /> 
+            Stepped up to provide +5 VDC to USB on iPod Camera Connector. If iPod is put to sleep while Camera Connector is present, +5 VDC at this pin slowly drains back to 0 VDC.</td> 
+        </tr> 
+        <tr> 
+            <td>19,20</td> 
+            <td>+12V</td> 
+            <td>Firewire Power 12 VDC (+)</td> 
+        </tr> 
+        <tr> 
+            <td>21</td> 
+            <td>Accessory Indicator/Serial enable</td> 
+            <td> 
+            <p>Different resistances indicate accessory type:<br /> 
+            1kOhm - iPod docking station, beeps when connected<br /> 
+            10kOhm - Takes some iPods into photo import mode<br /> 
+            68kOhm - makes iPhone 3g send audio through line-out without any messages<br /> 
+            500kOhm - related to serial communication / used to enable serial communications Used in Dension Ice Link Plus car interface<br /> 
+            &nbsp;             1MOhm - Belkin auto adaptor, iPod shuts down automatically when power disconnected Connecting pin 21 to ground with a 1MOhm resistor does stop the ipod when power (i.e. Firewire-12V) is cut. Looks to be that when this pin is grounded it closes a switch so that on loss of power the Ipod shuts off. Dock has the same Resistor.</p> 
+            </td> 
+        </tr> 
+        <tr> 
+            <td>22</td> 
+            <td>TPA (-)</td> 
+            <td>FireWire Data TPA (-)</td> 
+        </tr> 
+        <tr> 
+            <td>23</td> 
+            <td>5 VDC (+)</td> 
+            <td>USB Power 5 VDC (+)</td> 
+        </tr> 
+        <tr> 
+            <td>24</td> 
+            <td>TPA (+)</td> 
+            <td>FireWire Data TPA (+)</td> 
+        </tr> 
+        <tr> 
+            <td>25</td> 
+            <td>Data (-)</td> 
+            <td>USB Data (-)</td> 
+        </tr> 
+        <tr> 
+            <td>26</td> 
+            <td>TPB (-)</td> 
+            <td>FireWire Data TPB (-)</td> 
+        </tr> 
+        <tr> 
+            <td>27</td> 
+            <td>Data (+)</td> 
+            <td> 
+            <p>USB Data (+) <br /> 
+            Pins 25 and 27 may be used in different manner. To force the iPod 5G to charge in any case, when USB Power 5 VDC (pin 23) is fed, 25 must be connected to 5V through a 10kOhm resistor, and 27 must be connected to the Ground (for example: pin 1) with a 10kOhm resistor.</p> 
+            <p>iPod 5G can also be forced to charge by attaching the data + and the data - pins to the 5v via a 10k Ohm resistor ( BOTH PINS) and connecting pin 16 to the 5v (ground). (Confirmed working with iPod 5G 20GB)</p> 
+            <p>To charge an iPhone 3G / iPod Touch 2nd gen or Ipod Classic (6th Gen), usb data- (25) should be at 2.8v, usb data+(27) should be at 2.0v. This can be done with a few simple resistors: 33k to +5v (23) and 22k to gnd(16) to obtain 2v and 33k to +5v and 47k to gnd to obtain 2.8v. This is a notification to the iphone that it is connected to the external charger and may drain amps from the usb.</p> 
+            <p>It's also possible to charge the iPod's or iPhone's battery to make use the of internal +3.3v output (18) terminal to connect the USB Data + (27) thru a 47k ohms resistor and the USB Data- (25) thru a 47k resistor to the USB Power source +5v (23). &nbsp;This way the USB function is still useable for normal operations and makes it easier the fit in a plug. The resistors are not to critical 2x 150k's still work.</p> 
+            </td> 
+        </tr> 
+        <tr> 
+            <td>28</td> 
+            <td>TPB (+)</td> 
+            <td>FireWire Data TPB (+)</td> 
+        </tr> 
+        <tr> 
+            <td>29,30</td> 
+            <td>GND</td> 
+            <td>FireWire Ground (-)</td> 
+        </tr> 
+</table>
+<div id="citation"><a href="http://pinouts.ru/PortableDevices/ipod_pinout.shtml">Pinouts.ru</a></div>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent" android:layout_height="fill_parent"
+	>
+	<LinearLayout
+		android:layout_width="fill_parent" android:layout_height="fill_parent"
+		android:padding="10dip"
+		android:orientation="vertical"
+		android:id="@+id/aboutlayout"		
+		>
+
+	<TextView android:text="@+string/app_name"
+		android:layout_width="fill_parent" android:layout_height="wrap_content"
+		android:textStyle="bold" android:typeface="monospace"
+		android:shadowColor="#FF00FF" android:shadowDx="1" android:shadowDy="1"
+		android:shadowRadius="2" android:gravity="center_horizontal" android:textSize="25sp"/>
+
+	<TextView android:layout_width="fill_parent"
+		android:layout_height="wrap_content" android:textSize="24sp"
+		android:text="@+string/version" android:gravity="center_horizontal"></TextView>
+	<TextView android:layout_width="fill_parent"
+		android:layout_height="wrap_content" android:text="@+string/about_message" 
+		android:textStyle="italic" android:typeface="serif" android:textSize="12sp"></TextView>
+	<TextView android:layout_width="fill_parent"
+		android:layout_height="wrap_content" android:textSize="18sp"
+		android:text="@+string/about_whatsnewtext" android:gravity="center_horizontal" android:textStyle="bold"></TextView>
+	<TextView android:layout_width="fill_parent"
+		android:layout_height="wrap_content" android:textSize="12sp"
+		android:text="@+string/about_whatsnew"
+		></TextView>
+
+	<Button android:gravity="center" android:layout_width="fill_parent" android:text="OK" android:layout_height="40dip" android:layout_marginTop="5dip" android:id="@+id/OK"></Button>
+	</LinearLayout>
+</ScrollView>

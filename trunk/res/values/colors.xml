@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<color name="rBlack">#444444</color>
+	<color name="rBrown">#7c5229</color>
+	<color name="rRed">#ff3030</color>
+	<color name="rOrange">#ffa42d</color>
+	<color name="rYellow">#fff200</color>
+	<color name="rGreen">#39b54a</color>
+	<color name="rBlue">#0072bc</color>
+	<color name="rViolet">#92278f</color>
+	<color name="rGrey">#898989</color>
+	<color name="rWhite">#ffffff</color>
+	<color name="rSilver">#cccccc</color>
+	<color name="rGold">#aba000</color>
+</resources>

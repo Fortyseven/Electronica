@@ -1,0 +1,167 @@
+<!doctype html>
+<html>
+<head>
+	<title>Electronica - PS/2 Keyboard Scancodes</title>
+	<link href="../css/theme.css" rel="stylesheet"/>
+	<script src="../js/jquery.js" type="text/javascript"></script>
+	<script src="../js/utils.js" type="text/javascript"></script>
+</head>
+<body id="top">
+	<h1>PS/2 Keyboard Scancodes</h1>
+	<ul id="Contents">
+		<li><a href="#scan">Scan Codes</a></li>
+		<li><a href="#acpi">ACPI</a></li>
+		<li><a href="#multi">Multimedia</a></li>
+		<li><a href="http://en.wikipedia.org/wiki/Scancode">Wikipedia</a></li>
+	</ul>
+	<div class="clear"></div>
+	
+	<h2><a name="scan">Scan Codes</a></h2>
+	<table>
+	<thead>
+		<tr><th>KEY</th><th>MAKE</th><th>BREAK</th></tr>
+	</thead>
+	<tr><td>A<td>1C<td>F0,1C</tr>
+	<tr><td>B<td>32<td>F0,32</tr>
+	<tr><td>C<td>21<td>F0,21</tr>
+	<tr><td>D<td>23<td>F0,23</tr>
+	<tr><td>E<td>24<td>F0,24</tr>
+	<tr><td>F<td>2B<td>F0,2B</tr>
+	<tr><td>G<td>34<td>F0,34</tr>
+	<tr><td>H<td>33<td>F0,33</tr>
+	<tr><td>I<td>43<td>F0,43</tr>
+	<tr><td>J<td>3B<td>F0,3B</tr>
+	<tr><td>K<td>42<td>F0,42</tr>
+	<tr><td>L<td>4B<td>F0,4B</tr>
+	<tr><td>M<td>3A<td>F0,3A</tr>
+	<tr><td>N<td>31<td>F0,31</tr>
+	<tr><td>O<td>44<td>F0,44</tr>
+	<tr><td>P<td>4D<td>F0,4D</tr>
+	<tr><td>Q<td>15<td>F0,15</tr>
+	<tr><td>R<td>2D<td>F0,2D</tr>
+	<tr><td>S<td>1B<td>F0,1B</tr>
+	<tr><td>T<td>2C<td>F0,2C</tr>
+	<tr><td>U<td>3C<td>F0,3C</tr>
+	<tr><td>V<td>2A<td>F0,2A</tr>
+	<tr><td>W<td>1D<td>F0,1D</tr>
+	<tr><td>X<td>22<td>F0,22</tr>
+	<tr><td>Y<td>35<td>F0,35</tr>
+	<tr><td>Z<td>1A<td>F0,1A</tr>
+	<tr><td>0<td>45<td>F0,45</tr>
+	<tr><td>1<td>16<td>F0,16</tr>
+	<tr><td>2<td>1E<td>F0,1E</tr>
+	<tr><td>3<td>26<td>F0,26</tr>
+	<tr><td>4<td>25<td>F0,25</tr>
+	<tr><td>5<td>2E<td>F0,2E</tr>
+	<tr><td>6<td>36<td>F0,36</tr>
+	<tr><td>7<td>3D<td>F0,3D</tr>
+	<tr><td>8<td>3E<td>F0,3E</tr>
+	<tr><td>9<td>46<td>F0,46</tr>
+	<tr><td>`<td>0E<td>F0,0E</tr>
+	<tr><td>-<td>4E<td>F0,4E</tr>
+	<tr><td>=<td>55<td>FO,55</tr>
+	<tr><td>\<td>5D<td>F0,5D</tr>
+	<tr><td>BKSP<td>66<td>F0,66</tr
+	><tr><td>SPACE<td>29<td>F0,29</tr>
+	<tr><td>TAB<td>0D<td>F0,0D</tr>
+	<tr><td>CAPS<td>58<td>F0,58</tr>
+	<tr><td>L SHFT<td>12<td>FO,12</tr>
+	<tr><td>L CTRL<td>14<td>FO,14</tr>
+	<tr><td>L GUI<td>E0,1F<td>E0,F0,1F</tr>
+	<tr><td>L ALT<td>11<td>F0,11</tr>
+	<tr><td>R SHFT<td>59<td>F0,59</tr>
+	<tr><td>R CTRL<td>E0,14<td>E0,F0,14</tr>
+	<tr><td>R GUI<td>E0,27<td>E0,F0,27</tr>
+	<tr><td>R ALT<td>E0,11<td>E0,F0,11</tr>
+	<tr><td>APPS<td>E0,2F<td>E0,F0,2F</tr>
+	<tr><td>ENTER<td>5A<td>F0,5A</tr>
+	<tr><td>ESC<td>76<td>F0,76</tr>
+	<tr><td>F1<td>05<td>F0,05</tr>
+	<tr><td>F2<td>06<td>F0,06</tr>
+	<tr><td>F3<td>04<td>F0,04</tr>
+	<tr><td>F4<td>0C<td>F0,0C</tr>
+	<tr><td>F5<td>03<td>F0,03</tr>
+	<tr><td>F6<td>0B<td>F0,0B</tr>
+	<tr><td>F7<td>83<td>F0,83</tr>
+	<tr><td>F8<td>0A<td>F0,0A</tr>
+	<tr><td>F9<td>01<td>F0,01</tr>
+	<tr><td>F10<td>09<td>F0,09</tr>
+	<tr><td>F11<td>78<td>F0,78</tr>
+	<tr><td>F12<td>07<td>F0,07</tr>
+	<tr><td>PRT SCRN<td>E0,12, E0,7C <td>E0,F0, 7C,E0, F0,12 </tr>
+	<tr><td>SCROLL<td>7E<td>F0,7E</tr>
+	<tr><td>PAUSE<td>E1,14,77, E1,F0,14, F0,77<td>-NONE- </tr>
+	<tr><td>[<td>54<td>FO,54</tr><tr><td>]<td>5B<td>F0,5B</tr>
+	<tr><td>;<td>4C<td>F0,4C</tr>
+	<tr><td>&#39;<td>52<td>F0,52</tr>
+	<tr><td>,<td>41<td>F0,41</tr>
+	<tr><td>.<td>49<td>F0,49</tr>
+	<tr><td>/<td>4A<td>F0,4A</tr>
+	<tr><td>INSERT<td>E0,70<td>E0,F0,70</tr>
+	<tr><td>HOME<td>E0,6C<td>E0,F0,6C</tr>
+	<tr><td>PG UP<td>E0,7D<td>E0,F0,7D</tr>
+	<tr><td>DELETE<td>E0,71<td>E0,F0,71</tr>
+	<tr><td>END<td>E0,69<td>E0,F0,69</tr>
+	<tr><td>PG DN<td>E0,7A<td>E0,F0,7A</tr>
+	<tr><td>U ARROW<td>E0,75<td>E0,F0,75</tr>
+	<tr><td>L ARROW<td>E0,6B<td>E0,F0,6B</tr>
+	<tr><td>D ARROW<td>E0,72<td>E0,F0,72</tr>
+	<tr><td>R ARROW<td>E0,74<td>E0,F0,74</tr>
+	<tr><td>NUM<td>77<td>F0,77</tr>
+	<tr><td>KP /<td>E0,4A<td>E0,F0,4A</tr>
+	<tr><td>KP *<td>7C<td>F0,7C</tr>
+	<tr><td>KP -<td>7B<td>F0,7B</tr>
+	<tr><td>KP +<td>79<td>F0,79</tr>
+	<tr><td>KP EN<td>E0,5A<td>E0,F0,5A</tr>
+	<tr><td>KP .<td>71<td>F0,71</tr>
+	<tr><td>KP 0<td>70<td>F0,70</tr>
+	<tr><td>KP 1<td>69<td>F0,69</tr>
+	<tr><td>KP 2<td>72<td>F0,72</tr>
+	<tr><td>KP 3<td>7A<td>F0,7A</tr>
+	<tr><td>KP 4<td>6B<td>F0,6B</tr>
+	<tr><td>KP 5<td>73<td>F0,73</tr>
+	<tr><td>KP 6<td>74<td>F0,74</tr>
+	<tr><td>KP 7<td>6C<td>F0,6C</tr>
+	<tr><td>KP 8<td>75<td>F0,75</tr>
+	<tr><td>KP 9<td>7D<td>F0,7D</tr>
+	</table>		
+
+	<h2><a name="acpi">ACPI</a></h2>
+	<table>
+		<thead>
+			<tr><th>KEY</th><th>MAKE</th><th>BREAK</th></tr>
+		</thead>
+		<tr><td>Power<td>E0, 37<td>E0, F0, 37</tr>
+		<tr><td>Sleep<td>E0, 3F<td>E0, F0, 3F</tr>
+		<tr><td>Wake<td>E0, 53<td>E0, F0, 5E</tr>
+	</table>		
+
+	<h2><a name="multi">Multimedia Keys</a></h2>
+	<table>
+		<thead>
+			<th>KEY<th>MAKE<th>BREAK
+		</thead>
+		<tr><td>Next Track</td><td>E0, 4D</td><td>E0, F0, 4D</td></tr>
+                <tr><td>Previous Track</td><td>E0, 15</td><td>E0, F0, 15</td></tr>
+                <tr><td>Stop</td><td>E0, 3B</td><td>E0, F0, 3B</td></tr>
+                <tr><td>Play/Pause</td><td>E0, 34</td><td>E0, F0, 34</td></tr>
+                <tr><td>Mute</td><td>E0, 23</td><td>E0, F0, 23</td></tr>
+                <tr><td>Volume Up</td><td>E0, 32</td><td>E0, F0, 32</td></tr>
+                <tr><td>Volume Down</td><td>E0, 21</td><td>E0, F0, 21</td></tr>
+                <tr><td>Media Select</td><td>E0, 50</td><td>E0, F0, 50</td></tr>
+                <tr><td>E-Mail</td><td>E0, 48</td><td>E0, F0, 48</td></tr>
+                <tr><td>Calculator</td><td>E0, 2B</td><td>E0, F0, 2B</td></tr>
+                <tr><td>My Computer</td><td>E0, 40</td><td>E0, F0, 40</td></tr>
+                <tr><td>WWW Search</td><td>E0, 10</td><td>E0, F0, 10</td></tr>
+                <tr><td>WWW Home</td><td>E0, 3A</td><td>E0, F0, 3A</td></tr>
+                <tr><td>WWW Back</td><td>E0, 38</td><td>E0, F0, 38</td></tr>
+                <tr><td>WWW Forward</td><td>E0, 30</td><td>E0, F0, 30</td></tr>
+                <tr><td>WWW Stop</td><td>E0, 28</td><td>E0, F0, 28</td></tr>
+                <tr><td>WWW Refresh</td><td>E0, 20</td><td>E0, F0, 20</td></tr>
+                <tr><td>WWW Favorites</td><td>E0, 18</td><td>E0, F0, 18</td></tr>
+	</table>
+
+	
+	<div id="citation"><a href="http://www.computer-engineering.org/ps2keyboard/">Adam Chapweske</a></div> 
+</body>
+</html>

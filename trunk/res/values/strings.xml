@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="app_name">Electronica</string>
+	<string name="version">Release 19</string>
+
+	<string name="about_message"><b>\"I\'ll be a story in your head...but that\'s OK. We\'re <i>all</i> stories in the end. Just make it a good one, eh? Cos it was, you know, it was the best. A daft old man who stole a magic box and ran away.\"</b> - Doctor Who (The Big Bang)</string>
+	<string name="about_whatsnewtext">What\'s New?</string>
+	<string name="about_whatsnew">
+		* Removed Chart: ASCII Chart\n
+		* New Section: Character Codes\n
+		* New Charts: ASCII Standard, Extended ASCII (IBM &amp; Windows), EBCDIC\n\n
+		* HTML-based charts are now zoomable
+		* Removed accidentally include large file 
+		* Reminder: Electronica now open to user submissions! Visit <a href="http://hacsoft.com/">hacsoft.com</a> for more details.\n\n
+	</string>
+
+	<string name="error">ERROR: %1$s</string>
+
+	<string name="main">Main</string>
+	<string name="tools">Tools</string>
+	<string name="formulas">Calculators</string>
+	<string name="charts">Reference</string>
+	<string name="about">About</string>
+
+	<string name="charts_components">Components</string>
+	<string name="charts_cables">Cables</string>
+	<string name="charts_video">Video</string>
+	<string name="charts_audio">Audio</string>
+	<string name="charts_circuits">Circuits</string>
+	<string name="charts_computers">Computers</string>
+	<string name="charts_chars">Character Codes</string>
+	
+	<string name="charts_ps2scancode">PS/2 Keyboard Scancodes</string>
+		
+	<string name="video_games">Video Games</string>
+	<string name="other">Other</string>
+	
+	<string name="formulas_ledresistance">LED Resistor</string>
+	<string name="formulas_ledresistance_vs">Supply Voltage</string>
+	<string name="formulas_ledresistance_vf">LED Forward Voltage</string>
+	<string name="formulas_ledresistance_if">LED Forward Current (mA)</string>
+
+	<string name="formulas_ohmslaw">Ohm\'s Law</string>
+
+	<string name="circuits_invamp">Inverting Amplifier</string>
+	<string name="circuits_noninvamp">Non-Inverting Amplifier</string>
+
+	<string name="toolresistorcolorcodes">Resistor Color Codes</string>
+	<string name="toolcapcalc">Capactor Marking Decoder</string>
+	
+	
+	<string name="menuAbout">About Electronica</string>
+	<string name="ohm">&#8486;</string>
+	
+	<string-array name="res_tolerance">
+		<item></item>
+		<item>&#177;1%</item>
+		<item>&#177;2%</item>
+		<item></item>
+		<item></item>
+		<item>&#177;0.5%</item>
+		<item>&#177;0.25%</item>
+		<item>&#177;0.1%</item>
+		<item>&#177;0.05%</item>
+		<item></item>
+		<item>&#177;5%</item>
+		<item>&#177;10%</item>
+	</string-array>
+
+	<string-array name="res_temperature">
+		<item>250ppm/K</item>
+		<item>100ppm/K</item>
+		<item>50ppm/K</item>
+		<item>15ppm/K</item>
+		<item>25ppm/K</item>
+		<item>20ppm/K</item>
+		<item>10ppm/K</item>
+		<item>5ppm/K</item>
+		<item>1ppm/K</item>
+		<item></item>
+		<item></item>
+		<item></item>
+	</string-array>
+
+	<string name="ohms_title">Ohm\'s Law</string>
+
+	<string name="led_title">LED Resistor</string>
+
+	<string name="sp_title">Series/Parallel Resistors</string>
+	<string name="sp_series">Series</string>
+	<string name="sp_parallel">Parallel</string>
+	<string name="sp_removed">Removed: %1$f</string>
+	<string name="sp_err_invalidinput">Resistance value must be positive and greater than zero.</string>
+	
+</resources>

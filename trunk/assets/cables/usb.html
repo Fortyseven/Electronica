@@ -1,0 +1,93 @@
+<!doctype html>
+<html>
+<head>
+	<title>Electronica - USB (Universal Serial Bus)</title>
+	<link href="../css/theme.css" rel="stylesheet"/>
+	<script src="../js/jquery.js" type="text/javascript"></script>
+	<script src="../js/utils.js" type="text/javascript"></script>
+</head>
+<body>
+	<h1>Universal Serial Bus (USB)</h1>
+		<ul id="Contents">
+			<li><a href="#basics">Basics</a></li>
+			<li><a href="#speeds">Speeds</a></li>
+			<li><a href="#pinouts">Pinouts</a></li>
+			<li><a href="#deviceclasses">Device Classes</a></li>
+			<li><a href="http://en.m.wikipedia.org/wiki/Universal_Serial_Bus">Wikipedia</a></li>
+		</ul>
+		
+	<div class="clear"></div>	
+	<h2><a name="basics">Basics</a></h2>
+	<ul>
+		<li><b>Maximum Length:</b> 5 meters (16.4 feet)</li>
+	</ul>
+	
+	<h2><a name="speeds">Speeds</a></h2>
+	<table style="width:auto">
+		<tr><th>SuperSpeed</th><td>4800 MBit/s (~572 MB/s; USB 3.0)</td><td>&nbsp;</td></tr>
+		<tr><th>High Speed</th><td>480 Mbit/s (~57 MB/s; USB 2.0)</td><td>&nbsp;</td></tr>
+		<tr><th>Full Speed</th><td>12  MBit/s (~1.43 MB/s)</td><td>3.3V to D+</td></tr>
+		<tr><th>Low Speed</th><td>1.5 MBit/s (~183 KB/s)</td><td>3.3V to D-</td></tr>
+	</table>		
+			
+	<h2><a name="pinouts">Pinouts</a></h2>
+
+	<div class="center"><img src="../images/usb_4pin.png"></div>
+	<table>		
+		<thead>
+			<th>Pin</th>
+			<th>Name</th>
+			<th>Wire Color</th>
+			<th>Description</th>
+		</thead>
+		<tr><td>1</td><td>VCC</td><td style="background: red; color: white">Red</td><td>+5V</td></tr>
+		<tr><td>2</td><td>D-</td><td style="background: #fff; color: black">White</td><td>Data -</td></tr>
+		<tr><td>3</td><td>D+</td><td style="background: green; color: white">Green</td><td>Data +</td></tr>
+		<tr><td>4</td><td>GND</td><td style="background: #444; color: white">Black</td><td>Ground</td></tr>
+	</table>
+	
+	<div class="center"><img src="../images/usb_5pin.png"></div>	
+	<table>
+		<thead>
+			<th>Pin</th>
+			<th>Name</th>
+			<th>Wire Color</th>
+			<th>Description</th>
+		</thead>
+		<tr><td>1</td><td>VCC</td><td style="background: red; color: white">Red</td><td>+5V</td></tr>
+		<tr><td>2</td><td>D-</td><td style="background: #fff; color: black">White</td><td>Data -</td></tr>
+		<tr><td>3</td><td>D+</td><td style="background: green; color: white">Green</td><td>Data +</td></tr>
+		<tr><td>5</td><td>GND</td><td>NONE</td><td>permits distinction of A- and B-plug.<ul><li>Type A end: connect to ground</li><li>Type B end: not connected</li></ul></td></tr>
+		<tr><td>5</td><td>GND</td><td style="background: #444; color: white">Black</td><td>Ground</td></tr>
+	</table>
+	
+	<h2><a name="deviceclasses">Device Classes</a></h2>	
+	<table id="DeviceClassTable">	
+		<thead>
+		<tr><th>Class</th><th>Usage</th><th>Description</th><th>Examples</th></tr>
+		</thead>
+		<tbody>
+			<tr><td>00h</td><td>Device</td><td>Unspecified</td><td>(Device class is unspecified. Interface descriptors are used for determining the required drivers.)</td></tr>
+			<tr><td>01h</td><td>Interface</td><td>Audio</td><td>Speaker, microphone, sound card, MIDI</td></tr>
+			<tr><td>02h</td><td>Both</td><td>Communications &amp; CDC Control</td><td>Ethernet adapter, modem</td></tr>
+			<tr><td>03h</td><td>Interface</td><td>Human interface device (HID)</td><td>Keyboard, mouse, joystick</td></tr>
+			<tr><td>05h</td><td>Interface</td><td>Physical Interface Device (PID)</td><td>Force feedback joystick</td></tr>
+			<tr><td>06h</td><td>Interface</td><td>Image</td><td>Webcam, scanner</td></tr>
+			<tr><td>07h</td><td>Interface</td><td>Printer</td><td>Laser printer, inkjet printer, CNC machine</td></tr>
+			<tr><td>08h</td><td>Interface</td><td>Mass storage</td><td>USB flash drive, memory card reader, digital audio player, digital camera, external drive</td></tr>
+			<tr><td>09h</td><td>Device</td><td>USB Hub</td><td>Full bandwidth hub</td></tr>
+			<tr><td>0Ah</td><td>Interface</td><td>CDC-Data</td><td>(This class is used together with class 02h—Communications and CDC Control.)</td></tr>
+			<tr><td>0Bh</td><td>Interface</td><td>Smart Card</td><td>USB smart card reader</td></tr>
+			<tr><td>0Dh</td><td>Interface</td><td>Content security</td><td>Fingerprint reader</td></tr>
+			<tr><td>0Eh</td><td>Interface</td><td>Video</td><td>Webcam</td></tr>
+			<tr><td>0Fh</td><td>Interface</td><td>Personal Healthcare</td><td>Pulse monitor (watch)</td></tr>
+			<tr><td>DCh</td><td>Both</td><td>Diagnostic Device</td><td>USB compliance testing device</td></tr>
+			<tr><td>E0h</td><td>Interface</td><td>Wireless Controller</td><td>Wi-Fi adapter, Bluetooth adapter</td></tr>
+			<tr><td>EFh</td><td>Both</td><td>Miscellaneous</td><td>ActiveSync device</td></tr>
+			<tr><td>FEh</td><td>Interface</td><td>Application-specific</td><td>IrDA Bridge, Test &amp; Measurement Class (USBTMC), USB DFU (Direct Firmware update)</td></tr>
+			<tr><td>FFh</td><td>Both</td><td>Vendor-specific</td><td>(This class code indicates that the device needs vendor specific drivers.)</td></tr>
+		</tbody>
+	</table>
+	<div id="citation"><a href="http://en.wikipedia.org/wiki/Universal_Serial_Bus">Wikipedia</a>, <a href="http://www.beyondlogic.org/usbnutshell/usb2.htm">beyondlogic.org</a></div>	
+</body>
+</html>
